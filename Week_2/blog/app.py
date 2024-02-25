@@ -21,7 +21,7 @@ def display_post(post_id):
     else:
         return "Post not found", 404
 
-@app.route('/create_post', methods=['POST'])
+@app.route('/new_post', methods=['POST'])
 def new_post():
     if request.method == 'POST':
         new_post = {
