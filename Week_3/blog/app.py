@@ -37,11 +37,13 @@ def get_posts_json():
     return jsonify(blogs)
 
 @app.route('/about')
-def about():
+def aboutMe():
     return render_template('about.html', title='About')
 
 @app.route('/contact')
-def contact():
+def contactMe():
     return render_template('contact.html', title='Contact')
+
+
 if __name__ == '__main__':
     app.run(port=5000,debug=True)
